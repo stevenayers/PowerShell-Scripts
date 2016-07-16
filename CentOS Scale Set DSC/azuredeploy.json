@@ -265,7 +265,7 @@
     "dscModules": {
       "nx": {
         "moduleName": "nx",
-        "moduleUri": "https://github.com/Microsoft/PowerShell-DSC-for-Linux/releases/download/v1.1.1-70/nx.zip"
+        "moduleUri": "https://raw.github.com/Stevea37/PowerShell-Scripts/master/CentOS%20Scale%20Set%20DSC/nx.zip"
       }
     },
     "autoScaleWAD": "[concat(variables('namingInfix'), 'autoScale')]",

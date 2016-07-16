@@ -1,6 +1,6 @@
 ﻿$Credential = Get-Credential
-$i = "234"
-$ResourceGroupName = "dsclinuxgroup$i"
+$i = "001"
+$ResourceGroupName = "dlg$i"
 $AccountName = "Autodsc$i"
 $DomainNamePrefix = "dscbase$i"
 $ResourceLocation = 'West Europe'
