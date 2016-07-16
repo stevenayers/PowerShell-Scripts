@@ -180,7 +180,7 @@
       },
       "configurationURI": {
         "type": "string",
-        "defaultValue": "https://raw.githubusercontent.com/Stevea37/dsclinuxconf/master/baseline.ps1",
+        "defaultValue": "https://raw.githubusercontent.com/Stevea37/PowerShell-Scripts/master/CentOS%20Scale%20Set%20DSC/baseline.ps1",
         "metadata": {
           "description": "The URI for the DSC configuration "
         }

@@ -1,5 +1,5 @@
-﻿#$Credential = Get-Credential
-$i = "2"
+﻿$Credential = Get-Credential
+$i = "234"
 $ResourceGroupName = "dsclinuxgroup$i"
 $AccountName = "Autodsc$i"
 $DomainNamePrefix = "dscbase$i"
