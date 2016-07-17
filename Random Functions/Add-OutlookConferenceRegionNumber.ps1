@@ -1,10 +1,9 @@
- #Written by Steven Ayers
-
 function Add-OutlookConferenceRegionNumber {
 
 [CmdletBinding()]
 param (
     [parameter(Mandatory=$true)][string]$DomainName,
+    [parameter(Mandatory=$true)][string]$SIPAddress,
     [parameter(Mandatory=$true)]
     [ValidateSet(
         "United_Kingdom",
@@ -66,7 +65,7 @@ param (
             $key2 >> $LogPath
             $key3= @{
                 "Name"='PublicMeeting';
-                "Value"='<Settings Version="14.0"><Public>false</Public><ConferenceID>WFVPZPDP</ConferenceID><HttpJoinLink>https://meet.unifiedcaas.net/atcgggm32wz/steven.ayers/WFVPZPDP</HttpJoinLink><ConfJoinLink>conf:sip:steven.ayers@redpixie.com;gruu;opaque=app:conf:focus:id:WFVPZPDP?conversation-id=9kw1xWVS74nP</ConfJoinLink><Subject/><ExpiryDate>00:00:00</ExpiryDate><AutoPromote OrganizerOnly="false" Value="Company"/><BodyLanguage>1033</BodyLanguage><Participants><Attendees/><Presenters/></Participants><Permissions><AdmissionType>ucOpenAuthenticated</AdmissionType></Permissions><MeetingOwner Smtp="" Sip=""/><IMDisabled>false</IMDisabled><AudioMuteEnabled>false</AudioMuteEnabled><VideoMuteEnabled>false</VideoMuteEnabled><Audio Type="caa" AudioModalityEnabled="true"><CAA><pstnId>623494</pstnId><region name="United Kingdom"/><BypassLobby>true</BypassLobby><AnnouncementEnabled>false</AnnouncementEnabled></CAA></Audio></Settings>';
+                "Value"='<Settings Version="14.0"><Public>false</Public><ConferenceID>WFVPZPDP</ConferenceID><HttpJoinLink>https://meet.unifiedcaas.net/atcgggm32wz/steven.ayers/WFVPZPDP</HttpJoinLink><ConfJoinLink>conf:sip:$SIPAddress;gruu;opaque=app:conf:focus:id:WFVPZPDP?conversation-id=9kw1xWVS74nP</ConfJoinLink><Subject/><ExpiryDate>00:00:00</ExpiryDate><AutoPromote OrganizerOnly="false" Value="Company"/><BodyLanguage>1033</BodyLanguage><Participants><Attendees/><Presenters/></Participants><Permissions><AdmissionType>ucOpenAuthenticated</AdmissionType></Permissions><MeetingOwner Smtp="" Sip=""/><IMDisabled>false</IMDisabled><AudioMuteEnabled>false</AudioMuteEnabled><VideoMuteEnabled>false</VideoMuteEnabled><Audio Type="caa" AudioModalityEnabled="true"><CAA><pstnId>623494</pstnId><region name="United Kingdom"/><BypassLobby>true</BypassLobby><AnnouncementEnabled>false</AnnouncementEnabled></CAA></Audio></Settings>';
                 "Path"=$KeyPath
             }
             $key3 >> $LogPath
